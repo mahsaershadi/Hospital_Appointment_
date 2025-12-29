@@ -219,21 +219,4 @@ The API returns standardized error responses:
 - **patients**: Patient records
 - **appointments**: Appointment records (linked to patients and users)
 
-## Security Notes
-
-- Passwords are hashed using bcrypt (10 rounds)
-- JWT tokens expire after 24 hours (configurable)
-- All sensitive endpoints require authentication
-- Admin-only endpoints are protected by role-based authorization
-
-## Development Notes
-
-- Set `TYPEORM_SYNCHRONIZE=true` for development (auto-syncs schema)
-- Set `TYPEORM_SYNCHRONIZE=false` for production (use migrations)
-- Always use strong JWT secrets in production
-- Never commit `.env` files
-
-## License
-
-ISC
 
